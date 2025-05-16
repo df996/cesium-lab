@@ -27,6 +27,17 @@ const routes = [
         name: 'HomePage',
         path: '/homePage',
         component: () => import('../views/HomePage/index.vue')
+      },
+      {
+        name: 'Basic',
+        path: '/basic',
+        children: [
+          {
+            name: 'BasicTianditu',
+            path: '/basic/tianditu',
+            component: () => import('../views/Basic/Tianditu/index.vue')
+          }
+        ]
       }
     ]
   }

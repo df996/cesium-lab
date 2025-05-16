@@ -22,7 +22,9 @@
         <el-sub-menu v-for="(root, rootIndex) in menus" :index="rootIndex">
           <template #title>{{ root.name }}</template>
           <el-menu-item v-for="(child, childIndex) in root?.children" :index="`${rootIndex}-${childIndex}`">
-            {{ child.name }}
+            <router-link :to="child.path">
+              {{ child.name }}
+            </router-link>
           </el-menu-item>
         </el-sub-menu>
       </el-menu>
@@ -42,18 +44,20 @@ import { ref } from 'vue'
  */
 const menus = ref([
   {
-    name: "菜单一",
+    name: "基础",
     children: [
       {
-        name: '子菜单一'
+        name: '使用天地图影像数据',
+        path: '/basic/tianditu'
       },
       {
-        name: '子菜单二'
+        name: '加载高德地图',
+        path: '/basic/amap'
       }
     ]
   },
   {
-    name: "菜单二",
+    name: "加载模型",
     children: [
       {
         name: '子菜单一'

@@ -2,6 +2,7 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { defineConfig } from 'vite'
 import viteCompression from 'vite-plugin-compression'
+import vitePlugCesium from 'vite-plugin-cesium'
 
 // import requireTransform from 'vite-plugin-require-transform'
 // https://vitejs.dev/config/
@@ -25,7 +26,8 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    viteCompression()
+    viteCompression(),
+    vitePlugCesium()
   ],
   build: {
     outDir: 'dist',
