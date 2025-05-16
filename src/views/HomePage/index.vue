@@ -10,7 +10,7 @@
  ¦----------------------------------------------------->
 
 <template>
-  <div class="w-full h-full">vue3 project template</div>
+  <div class="w-full h-full"></div>
 </template>
 
 <script setup>
