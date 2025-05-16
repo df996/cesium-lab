@@ -1,0 +1,52 @@
+/* ------------------------------------------------------
+¦ 覆盖其他样式
+¦
+¦ Author: 大风
+¦ Email: 1236192@qq.com
+¦ Date: 2024-08-19 14:16:01
+¦ Version: 1.0
+¦ FilePath: packages\editor\src\styles\override.css
+¦------------------------------------------------------*/
+
+.el-tree {
+  --el-tree-node-content-height: var(--list-item-height);
+}
+
+.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+  --el-color-primary-light-9: #f0f4fa;
+}
+
+.el-collapse-item__header {
+ --el-collapse-header-font-size: var(--el-font-size-base);
+ color: var(--el-text-color-regular);
+}
+
+.el-collapse-item__content {
+  --el-collapse-content-font-size: var(--font-size);
+}
+
+/** fxxking tailwindcss **/
+.bottom-0 {
+  bottom: 0;
+}
+.right-0 {
+  right: 0;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-20 {
+  z-index: 20;
+}
+.z-30 {
+  z-index: 30;
+}
+.z-40 {
+  z-index: 40;
+}
+.z-50 {
+  z-index: 50;
+}
+.z-999 {
+  z-index: 999;
+}

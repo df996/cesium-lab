@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    // 指定ECMAScript目标版本为最新ES规范（包含所有最新特性）
+    "target": "esnext",
+
+    // 指定模块系统为ES模块（支持顶层await等现代特性）
+    "module": "esnext",
+
+    // 模块解析策略使用Node.js风格（支持package.json的exports字段）
+    "moduleResolution": "node",
+
+    // 启用所有严格类型检查选项（包括null检查、未使用变量检测等）
+    "strict": true,
+
+    // 保留JSX语法不进行转换（需配合Babel等工具处理JSX）
+    "jsx": "preserve",
+
+    // 生成源代码映射文件（便于调试时映射到源码）
+    "sourceMap": true,
+
+    // 允许直接导入JSON文件（需配合@types/node类型声明）
+    "resolveJsonModule": true,
+
+    // 启用CommonJS/ES模块互操作（解决default导入问题）
+    "esModuleInterop": true,
+
+    // 指定包含的库类型声明文件（ESNext特性 + 浏览器DOM API）
+    "lib": ["esnext", "dom"],
+
+    // 设置基础目录为当前目录（用于路径别名解析）
+    "baseUrl": ".",
+
+    // 路径别名配置（当前为空，可扩展如："@/*": ["src/*"]）
+    "paths": {}
+  },
+
+  // 包含需要编译的文件模式（匹配packages目录下所有文件）
+  "include": [
+    "packages/**/*"
+  ],
+
+  // 排除不需要编译的目录（node_modules标准排除项）
+  "exclude": ["node_modules"]
+}

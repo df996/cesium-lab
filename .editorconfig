@@ -1,0 +1,26 @@
+# 设置当前目录为配置根目录，阻止向上查找.editorconfig文件
+root = true
+
+# 全局匹配所有文件类型
+[*]
+
+# 设置文件字符编码为UTF-8（避免乱码问题）
+charset = utf-8
+
+# 缩进风格使用空格（替代制表符Tab）
+indent_style = space
+
+# 缩进空格数为2个（与indent_style配合使用）
+indent_size = 2
+
+# 换行符使用LF格式（Unix/Linux标准换行）
+end_of_line = lf
+
+# 强制在文件末尾添加一个空行（符合POSIX标准）
+insert_final_newline = true
+
+# 自动移除行尾空白字符（保持代码整洁）
+trim_trailing_whitespace = true
+
+# 强制使用单引号（注：部分语言插件可能不支持此配置）
+quote_type = single

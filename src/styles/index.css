@@ -1,0 +1,42 @@
+/* ------------------------------------------------------
+¦ styles
+¦
+¦ Author: 大风
+¦ Email: 1236192@qq.com
+¦ Date: 2024-08-19 14:16:01
+¦ Version: 1.0
+¦ FilePath: packages\editor\src\styles\index.css
+¦------------------------------------------------------*/
+
+/* 规范化 */
+@import 'normalize.css';
+
+/* 变量 */
+@import './variables.css';
+
+/* 滚动条 */
+@import './scrollerbar.css';
+
+/* 字体 */
+@import './fonts.css';
+
+/* 组件库 */
+@import 'element-plus/dist/index.css';
+
+/* 样式覆盖 */
+@import './override.css';
+
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: var(--color);
+  font-size: var(--font-size);
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, Arial, sans-serif;
+}
+
+div, main, header, footer, section, p {
+  box-sizing: border-box;
+}

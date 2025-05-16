@@ -1,0 +1,18 @@
+/* ------------------------------------------------------
+¦ 样式变量定义
+¦
+¦ Author: 大风
+¦ Email: 1236192@qq.com
+¦ Date: 2024-08-19 14:16:01
+¦ Version: 1.0
+¦ FilePath: packages\editor\src\styles\variables.css
+¦------------------------------------------------------*/
+
+:root {
+  --border-color: rgba(0, 0, 0, 0.065);
+  --bg-color: rgba(255, 255, 255, 1);
+  --list-item-height: 36px;
+  --icon-hover-bg: #eee;
+  --icon-active-bg: #e6e6e6;
+  --font-size: 14px;
+}
