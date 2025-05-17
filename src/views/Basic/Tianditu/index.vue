@@ -9,7 +9,7 @@
  ¦----------------------------------------------------->
 
 <template>
-  <div ref="cesiumContainerRef"></div>
+  <div ref="cesiumContainerRef" class="w-full h-full"></div>
 </template>
 
 <script setup>

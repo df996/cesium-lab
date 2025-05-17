@@ -20,9 +20,9 @@
         class="h-full"
       >
         <el-sub-menu v-for="(root, rootIndex) in menus" :index="rootIndex">
-          <template #title>{{ root.name }}</template>
+          <template #title><span class="text-sm font-bold">{{ root.name }}</span></template>
           <el-menu-item v-for="(child, childIndex) in root?.children" :index="`${rootIndex}-${childIndex}`">
-            <router-link :to="child.path">
+            <router-link :to="child.path" class="text-white" active-class="text-selected">
               {{ child.name }}
             </router-link>
           </el-menu-item>
@@ -51,8 +51,12 @@ const menus = ref([
         path: '/basic/tianditu'
       },
       {
-        name: '加载高德地图',
-        path: '/basic/amap'
+        name: '打印左键点击的经纬度',
+        path: '/basic/printlnglat'
+      },
+      {
+        name: '绘制线条',
+        path: '/basic/drawline'
       }
     ]
   },

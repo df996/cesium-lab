@@ -36,6 +36,16 @@ const routes = [
             name: 'BasicTianditu',
             path: '/basic/tianditu',
             component: () => import('../views/Basic/Tianditu/index.vue')
+          },
+          {
+            name: 'BasicPrintLnglat',
+            path: '/basic/printlnglat',
+            component: () => import('../views/Basic/PrintLnglat/index.vue')
+          },
+          {
+            name: 'BasicDrawLine',
+            path: '/basic/drawline',
+            component: () => import('../views/Basic/DrawLine/index.vue')
           }
         ]
       }

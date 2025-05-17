@@ -40,3 +40,7 @@ body {
 div, main, header, footer, section, p {
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
