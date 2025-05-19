@@ -46,6 +46,11 @@ const routes = [
             name: 'BasicDrawLine',
             path: '/basic/drawline',
             component: () => import('../views/Basic/DrawLine/index.vue')
+          },
+          {
+            name: 'BasicDrawRect',
+            path: '/basic/drawrect',
+            component: () => import('../views/Basic/DrawRect/index.vue')
           }
         ]
       }

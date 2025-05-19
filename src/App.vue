@@ -57,6 +57,10 @@ const menus = ref([
       {
         name: '绘制线条',
         path: '/basic/drawline'
+      },
+      {
+        name: '绘制矩形',
+        path: '/basic/drawrect'
       }
     ]
   },
