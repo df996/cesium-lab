@@ -73,6 +73,10 @@ const menus = ref([
       {
         name: '绘制墙',
         path: '/basic/drawWall'
+      },
+      {
+        name: '标记点',
+        path: '/basic/marker'
       }
     ]
   },

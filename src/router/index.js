@@ -66,6 +66,11 @@ const routes = [
             name: 'BasicDrawWall',
             path: '/basic/drawwall',
             component: () => import('../views/Basic/DrawWall/index.vue')
+          },
+          {
+            name: 'BasicMarker',
+            path: '/basic/marker',
+            component: () => import('../views/Basic/Marker/index.vue')
           }
         ]
       }
