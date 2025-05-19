@@ -69,6 +69,10 @@ const menus = ref([
       {
         name: '绘制圆柱体',
         path: '/basic/drawcylinder'
+      },
+      {
+        name: '绘制墙',
+        path: '/basic/drawWall'
       }
     ]
   },

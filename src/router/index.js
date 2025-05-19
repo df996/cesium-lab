@@ -61,6 +61,11 @@ const routes = [
             name: 'BasicDrawCylinder',
             path: '/basic/drawcylinder',
             component: () => import('../views/Basic/DrawCylinder/index.vue')
+          },
+          {
+            name: 'BasicDrawWall',
+            path: '/basic/drawwall',
+            component: () => import('../views/Basic/DrawWall/index.vue')
           }
         ]
       }
