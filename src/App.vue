@@ -65,6 +65,10 @@ const menus = ref([
       {
         name: '绘制圆形',
         path: '/basic/drawcircle'
+      },
+      {
+        name: '绘制圆柱体',
+        path: '/basic/drawcylinder'
       }
     ]
   },

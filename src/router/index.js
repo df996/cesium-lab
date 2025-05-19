@@ -56,6 +56,11 @@ const routes = [
             name: 'BasicDrawCircle',
             path: '/basic/drawcircle',
             component: () => import('../views/Basic/DrawCircle/index.vue')
+          },
+          {
+            name: 'BasicDrawCylinder',
+            path: '/basic/drawcylinder',
+            component: () => import('../views/Basic/DrawCylinder/index.vue')
           }
         ]
       }
