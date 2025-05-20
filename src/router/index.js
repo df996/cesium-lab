@@ -73,6 +73,17 @@ const routes = [
             component: () => import('../views/Basic/Marker/index.vue')
           }
         ]
+      },
+      {
+        name: 'Interactive',
+        path: '/interactive',
+        children: [
+          {
+            name: 'InteractiveEvent',
+            path: '/interactive/event',
+            component: () => import('../views/Interactive/Event/index.vue')
+          }
+        ]
       }
     ]
   }

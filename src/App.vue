@@ -81,6 +81,15 @@ const menus = ref([
     ]
   },
   {
+    name: '交互',
+    children: [
+      {
+        name: '事件',
+        path: '/interactive/event'
+      }
+    ]
+  },
+  {
     name: "加载模型",
     children: [
       {
