@@ -86,6 +86,10 @@ const menus = ref([
       {
         name: '事件',
         path: '/interactive/event'
+      },
+      {
+        name: '弹窗',
+        path: '/interactive/dialog'
       }
     ]
   },

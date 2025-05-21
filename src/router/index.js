@@ -82,6 +82,11 @@ const routes = [
             name: 'InteractiveEvent',
             path: '/interactive/event',
             component: () => import('../views/Interactive/Event/index.vue')
+          },
+          {
+            name: 'InteractiveDialog',
+            path: '/interactive/dialog',
+            component: () => import('../views/Interactive/Dialog/index.vue')
           }
         ]
       }

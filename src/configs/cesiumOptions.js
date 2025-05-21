@@ -35,5 +35,11 @@ export const cesiumOptions = {
   // 地图上选择选中框
   selectionIndicator: false,
   // 信息弹框
-  infoBox: false
+  infoBox: false,
+  // 帧率
+  targetFrameRate: 30,
+  // 按需渲染
+  requestRenderMode: true,
+  // 禁用2d
+  // scene3DOnly: true
 }
