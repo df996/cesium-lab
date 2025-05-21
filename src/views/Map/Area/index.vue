@@ -49,17 +49,6 @@ onMounted(() => {
   const geoJson = Cesium.GeoJsonDataSource.load('/Xihuqu.json')
   geoJson.then(dataSource => {
     viewer.dataSources.add(dataSource)
-    const polygons = dataSource.entities.values.filter(e => e.polygon)
-    viewer.entities.add({
-      polygon: {
-        history: new Cesium.PolygonHierarchy(
-          Cesium.Cartesian3.fromDegreesArray([-180,-90, -180,90, 180,90, 180,-90]),
-          polygons.map(e => e.polygon.hierarchy.getValue().positions)
-        )
-      },
-      material: Cesium.Color.fromCssColorString('rgba(255, 0, 0, 0.5)'),
-      height: 0
-    })
   })
 })
 
