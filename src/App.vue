@@ -94,6 +94,15 @@ const menus = ref([
     ]
   },
   {
+    name: '地图',
+    children: [
+      {
+        name: '指定区域',
+        path: '/map/area'
+      }
+    ]
+  },
+  {
     name: "加载模型",
     children: [
       {

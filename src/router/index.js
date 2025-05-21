@@ -89,6 +89,17 @@ const routes = [
             component: () => import('../views/Interactive/Dialog/index.vue')
           }
         ]
+      },
+      {
+        name: 'map',
+        path: '/map',
+        children: [
+          {
+            name: 'MapArea',
+            path: '/map/area',
+            component: () => import('../views/Map/Area/index.vue')
+          }
+        ]
       }
     ]
   }
