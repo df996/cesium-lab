@@ -100,6 +100,17 @@ const routes = [
             component: () => import('../views/Map/Area/index.vue')
           }
         ]
+      },
+      {
+        name: 'model',
+        path: '/model',
+        children: [
+          {
+            name: 'ModelLoad',
+            path: '/model/load',
+            component: () => import('../views/Model/Load/index.vue')
+          }
+        ]
       }
     ]
   }

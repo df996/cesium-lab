@@ -103,13 +103,11 @@ const menus = ref([
     ]
   },
   {
-    name: "加载模型",
+    name: "模型",
     children: [
       {
-        name: '子菜单一'
-      },
-      {
-        name: '子菜单二'
+        name: '加载模型',
+        path: '/model/load'
       }
     ]
   }
